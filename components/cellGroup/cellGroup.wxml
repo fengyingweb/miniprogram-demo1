@@ -1,0 +1,12 @@
+<!--components/cellGroup/cellGroup.wxml-->
+<view wx:if="title">
+    <view class="fy-cell-group__title">
+      <text>{{title}}</text>
+    </view>
+    <view class="{{classes}}">
+      <slot></slot>
+    </view>
+</view>
+<view wx:else class="{{classes}}">
+  <slot></slot>
+</view>
