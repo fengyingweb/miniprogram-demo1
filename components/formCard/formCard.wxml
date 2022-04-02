@@ -1,6 +1,31 @@
 <!--components/formCard/formCard.wxml-->
 <view class="form-card">
-  <van-row wx:for="{{maxRow}}" wx:for-item="rowIndex" gutter="5">
-    <van-col span="24">{{rowIndex}}</van-col>
-  </van-row>
+  <block wx:for="{{formConfigs}}" wx:key="name" wx:for-item="formItem">
+    <van-row gutter="5">
+      <van-col span="{{formItem.layout.span || 24}}">
+        <van-row>
+          <van-col
+            wx:if="{{formItem.label}}"
+            span="{{formItem.layout.labelSpan >= 0 ? formItem.layout.labelSpan : 3}}"
+            custom-class="label">
+            {{formItem.label}}
+          </van-col>
+          <van-col
+            span="{{(formItem.layout.labelSpan >= 0 && 24 - formItem.layout.labelSpan) || 21}}">
+            <view class="input-wrapper" wx:if="{{formItem.layout.type === 'input'}}">
+              <van-field
+                model:value="{{formData[formItem.name]}}"
+                border="{{false}}"
+                placeholder="{{formItem.layout.inputProps.placeholder}}"
+                left-icon="{{formItem.layout.inputProps.leftIcon ? formItem.layout.inputProps.leftIcon : ''}}"
+                right-icon="{{formItem.layout.inputProps.rightIcon ? formItem.layout.inputProps.rightIcon : ''}}"
+                readonly="{{formItem.layout.inputProps.readonly ? formItem.layout.inputProps.readonly : false}}"
+                input-class="input-content">
+              </van-field>
+            </view>
+          </van-col>
+        </van-row>
+      </van-col>
+    </van-row>
+  </block>
 </view>
