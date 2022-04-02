@@ -1,0 +1,4 @@
+<!--pages/task/task.wxml-->
+<view class="flex flex-column justify-between align-center container" style="min-height: {{minHeight}}px">
+  <text>任务下发</text>
+</view>
