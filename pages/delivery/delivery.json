@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "送料出库",
+  "usingComponents": {
+    "fy-button": "/components/button/button",
+    "fy-submit-bar": "/components/submitBar/submitBar",
+    "fy-cell-group": "/components/cellGroup/cellGroup",
+    "fy-cell": "/components/cell/cell",
+    "search-input": "/components/searchInput/searchInput",
+    "form-card": "/components/formCard/formCard"
+  }
+}
