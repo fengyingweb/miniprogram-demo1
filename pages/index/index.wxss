@@ -1,0 +1,39 @@
+/**index.wxss**/
+.userinfo {
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  width: 100%;
+  margin: 200rpx 0;
+}
+.task-wrapper {
+  width: 100%;
+  padding: 32rpx;
+}
+.task-item {
+  flex-shrink: 0;
+  margin: 10rpx;
+  width: 45%;
+  height: 160rpx;
+  background: #07c160;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
