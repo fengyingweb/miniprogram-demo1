@@ -1,0 +1,16 @@
+<!--components/cell/cell.wxml-->
+<view class="{{wrapperClasses}}">
+  <image wx:if="{{icon}}" class="fy-cell__left-icon" src="{{icon}}"></image>
+  <view class="{{['fy-cell__title', titleClass]}}" wx:if="{{title || label}}">
+    <text>{{title}}</text>
+    <view class="{{['fy-cell__label', labelClass]}}">
+      <text>{{label}}</text>
+    </view>
+  </view>
+  <view
+    class="{{['fy-cell__value', !title ? 'fy-cell__value--alone' : '']}}"
+    wx:if="{{value}}">
+    <text>{{value}}</text>
+  </view>
+  <view wx:if="{{isLink}}" class="{{rightClasses}}"></view>
+</view>
