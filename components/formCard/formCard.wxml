@@ -1,0 +1,6 @@
+<!--components/formCard/formCard.wxml-->
+<view class="form-card">
+  <van-row wx:for="{{maxRow}}" wx:for-item="rowIndex" gutter="5">
+    <van-col span="24">{{rowIndex}}</van-col>
+  </van-row>
+</view>
