@@ -1,0 +1,27 @@
+<!--pages/delivery/delivery.wxml-->
+<view class="flex flex-column align-center container" style="min-height: {{minHeight}}px">
+  <view class="header-search-wrapper">
+    <search-input
+      inputText="{{workcenterCode}}"
+      placeholder="请选择WKC"
+      bind:click-right-icon="clickSearchIcon">
+    </search-input>
+  </view>
+
+  <view class="flex flex-column align-center content-wrapper">
+    <view class="form-search-wrapper">
+      <form-card
+        formData="{{formData}}"
+        formConfigs="{{cardConfig}}">
+      </form-card>
+    </view>
+  </view>
+  <fy-submit-bar
+    show-left="{{true}}"
+    left-btn-text="重置"
+    right-btn-text="呼叫"
+    bindleftBtnTap="onReset"
+    bindrightBtnTap="onSubmit">
+  </fy-submit-bar>
+  <van-toast id="van-toast"></van-toast>
+</view>
