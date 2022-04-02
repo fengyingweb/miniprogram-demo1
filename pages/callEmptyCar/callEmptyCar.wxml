@@ -1,0 +1,4 @@
+<!--pages/callEmptyCar/callEmptyCar.wxml-->
+<view class="flex flex-column justify-between align-center container" style="min-height: {{minHeight}}px">
+  <text>呼叫空车</text>
+</view>
