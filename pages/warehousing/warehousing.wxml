@@ -1,0 +1,4 @@
+<!--pages/warehousing/warehousing.wxml-->
+<view class="flex flex-column justify-between align-center container" style="min-height: {{minHeight}}px">
+  <text>接收入库</text>
+</view>
