@@ -1,0 +1,11 @@
+<!--components/submitBar/submitBar.wxml-->
+<view class="submit-bar">
+  <view class="submit-bar-left">
+    <fy-button wx:if="{{showLeft}}" type="info" plain bindtapBtn="leftBtnTap">{{leftBtnText}}</fy-button>
+    <slot name="left"></slot>
+  </view>
+  <view class="submit-bar-right">
+    <fy-button wx:if="{{showRight}}" type="primary" bindtapBtn="rightBtnTap">{{rightBtnText}}</fy-button>
+    <slot name="right"></slot>
+  </view>
+</view>
