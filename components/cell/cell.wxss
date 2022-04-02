@@ -1,0 +1,116 @@
+/* components/cell/cell.wxss */
+.fy-cell {
+  width: 100%;
+  display: flex;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+  line-height: 48rpx;
+  position: relative;
+  background-color: #fff;
+  color: #323233;
+  font-size: 28rpx;
+  overflow: hidden;
+}
+
+.fy-cell:not(:last-child)::after {
+  content: ' ';
+  position: absolute;
+  pointer-events: none;
+  box-sizing: border-box;
+  left: 30rpx;
+  right: 0;
+  bottom: 0;
+  transform: scaleY(0.5);
+  border-bottom: 1px solid #ebedf0;
+}
+
+.fy-cell--borderless::after {
+  display: none;
+}
+
+.fy-cell__label {
+    color: #969799;
+    font-size: 24rpx;
+    margin-top: 6rpx;
+    line-height: 36rpx;
+}
+
+.fy-cell__title,
+.fy-cell__value {
+    flex: 1;
+}
+
+.fy-cell__value {
+    color: #969799;
+    overflow: hidden;
+    text-align: right;
+    position: relative;
+    vertical-align: middle;
+}
+.fy-cell__value--alone {
+    color: #323233;
+    text-align: left;
+}
+
+.fy-cell__left-icon {
+    height: 48rpx;
+    min-width: 1em;
+    font-size: 32rpx;
+    line-height: 48rpx;
+}
+
+.fy-cell__left-icon {
+  margin-right: 10rpx;
+}
+
+.fy-cell__right-icon {
+    width: 24rpx;
+    height: 24rpx;
+    color: #969799;
+    margin-left: 10rpx;
+}
+
+.fy-cell--clickable:active {
+  background-color: #f2f3f5;
+}
+
+.fy-cell--required {
+    overflow: visible;
+}
+.fy-cell--required::before {
+    content: '*';
+    position: absolute;
+    left: 7px;
+    font-size: 14px;
+    color: #f44;
+}
+
+.fy-cell--center {
+  align-items: center;
+}
+
+.fy-cell--large {
+    padding-top: 24rpx;
+    padding-bottom: 24rpx;
+}
+.fy-cell--large .fy-cell__title {
+    font-size: 32rpx;
+}
+
+.fy-cell--large .fy-cell__label {
+    font-size: 28px;
+}
+.arrow {
+  border-top: 2rpx solid #969799;
+  border-right: 2rpx solid #969799;
+  transform: rotate(45deg);
+}
+.arrow-left {
+  transform: rotate(-135deg);
+}
+.arrow-up {
+  transform: rotate(-45deg);
+}
+.arrow-down {
+  transform: rotate(135deg);
+}
