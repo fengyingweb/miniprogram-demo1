@@ -11,6 +11,7 @@
   box-sizing: border-box;
 }
 .form-search-wrapper {
+  padding-left: 16rpx;
   width: 100%;
   background: #fff;
   border-radius: 10rpx;
