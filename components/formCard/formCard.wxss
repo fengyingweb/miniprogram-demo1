@@ -1,1 +1,11 @@
 /* components/formCard/formCard.wxss */
+.label {
+  font-size: 28rpx;
+  color: #323232;
+}
+.label::after {
+  content: '：';
+}
+.input-wrapper {
+  width: 90%;
+}
