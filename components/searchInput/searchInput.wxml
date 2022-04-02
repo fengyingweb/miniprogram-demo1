@@ -1,0 +1,13 @@
+<!--components/searchInput/searchInput.wxml-->
+<view class="search-input-wrapper">
+  <van-cell-group>
+    <van-field
+      model:value="{{inputText}}"
+      placeholder="{{placeholder}}"
+      readonly="{{true}}"
+      clearable="{{true}}"
+      right-icon="search"
+      bind:click-icon="clickRightIcon">
+    </van-field>
+  </van-cell-group>
+</view>
