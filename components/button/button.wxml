@@ -1,0 +1,12 @@
+<!--components/button/button.wxml-->
+<button 
+  type="{{type}}"
+  disabled="{{disabled}}"
+  form-type="{{nativeType}}"
+  loading="{{loading}}"
+  open-type="{{openType}}"
+  class="{{classes}}"
+  bindtap="onTapBtn"
+  bindtouchstart="onTouchStart">
+  <slot>{{text}}</slot>
+</button>
