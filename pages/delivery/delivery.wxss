@@ -1,0 +1,19 @@
+/* pages/delivery/delivery.wxss */
+.header-search-wrapper {
+  padding: 20rpx 32rpx;
+  width: 750rpx;
+  background: #07c160;
+  box-sizing: border-box;
+}
+.content-wrapper {
+  padding: 32rpx;
+  width: 750rpx;
+  box-sizing: border-box;
+}
+.form-search-wrapper {
+  width: 100%;
+  background: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
