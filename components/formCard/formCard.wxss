@@ -1,5 +1,6 @@
 /* components/formCard/formCard.wxss */
 .label {
+  margin-top: 34rpx;
   font-size: 28rpx;
   color: #323232;
 }
@@ -7,5 +8,8 @@
   content: '：';
 }
 .input-wrapper {
-  width: 90%;
+  margin: 10rpx 0;
+  border: 2rpx solid #07c160;
+  border-radius: 10rpx;
+  transform: scale(0.8);
 }
