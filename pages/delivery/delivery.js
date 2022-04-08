@@ -17,7 +17,8 @@ Page({
           layout: {
               row: 0,
               labelSpan: 6,
-              input: true,
+              type: 'input',
+              scanInput: false,
               inputProps: {
                   placeholder: '请选择物料编码',
                   rightIcon: 'search',
@@ -32,10 +33,12 @@ Page({
           layout: {
               row: 1,
               labelSpan: 6,
+              type: 'input',
               scanInput: true,
-              scanInputProps: {
+              inputProps: {
                   placeholder: '请输入/选择来源货位',
                   hasKeyboardIcon: false,
+                  leftIcon: 'scan',
                   rightIcon: 'search'
               }
           }
@@ -47,10 +50,12 @@ Page({
           layout: {
               row: 2,
               labelSpan: 6,
+              type: 'input',
               scanInput: true,
-              scanInputProps: {
+              inputProps: {
                   placeholder: '请输入/选择载具条码',
                   hasKeyboardIcon: false,
+                  leftIcon: 'scan',
                   rightIcon: 'search'
               }
           }
@@ -62,10 +67,12 @@ Page({
           layout: {
               row: 3,
               labelSpan: 6,
+              type: 'input',
               scanInput: true,
-              scanInputProps: {
+              inputProps: {
                   placeholder: '请输入/选择目标货位',
                   hasKeyboardIcon: false,
+                  leftIcon: 'scan',
                   rightIcon: 'search'
               }
           }
