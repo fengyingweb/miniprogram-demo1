@@ -146,5 +146,15 @@ Page({
   // click头部搜索
   clickSearchIcon(e) {
     console.log(e);
+  },
+
+  // 点击表单部位搜索
+  clickRightIcon(e) {
+    console.log(e);
+  },
+
+  // 点击表单扫描icon
+  clickLeftIcon(e) {
+    console.log(e);
   }
 })
