@@ -13,3 +13,6 @@
   border-radius: 10rpx;
   transform: scale(0.8);
 }
+.left-icon {
+  margin-right: 10rpx;
+}
