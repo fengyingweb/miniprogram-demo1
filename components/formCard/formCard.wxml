@@ -17,10 +17,20 @@
                 model:value="{{formData[formItem.name]}}"
                 border="{{false}}"
                 placeholder="{{formItem.layout.inputProps.placeholder}}"
-                left-icon="{{formItem.layout.inputProps.leftIcon ? formItem.layout.inputProps.leftIcon : ''}}"
                 right-icon="{{formItem.layout.inputProps.rightIcon ? formItem.layout.inputProps.rightIcon : ''}}"
                 readonly="{{formItem.layout.inputProps.readonly ? formItem.layout.inputProps.readonly : false}}"
-                input-class="input-content">
+                input-class="input-content"
+                data-item="{{formItem}}"
+                bind:click-icon="clickRightIcon">
+                <van-icon
+                  wx:if="{{formItem.layout.inputProps.leftIcon}}"
+                  slot="left-icon"
+                  name="{{formItem.layout.inputProps.leftIcon}}"
+                  size="24px"
+                  data-item="{{formItem}}"
+                  custom-class="left-icon"
+                  bind:click="clickLeftIcon">
+                </van-icon>
               </van-field>
             </view>
           </van-col>
