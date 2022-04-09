@@ -12,7 +12,9 @@
     <view class="form-search-wrapper">
       <form-card
         formData="{{formData}}"
-        formConfigs="{{cardConfig}}">
+        formConfigs="{{cardConfig}}"
+        bind:click-right-icon="clickRightIcon"
+        bind:click-left-icon="clickLeftIcon">
       </form-card>
     </view>
   </view>
