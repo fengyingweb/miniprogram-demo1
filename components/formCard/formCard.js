@@ -49,6 +49,17 @@ Component({
       const maxRow = Math.max(...settings.map(item => item.layout.row))
       console.log(maxRow)
       return maxRow
+    },
+    // 点击右边icon
+    clickRightIcon(e) {
+      this.triggerEvent('click-right-icon', {key: e.currentTarget.dataset.item.name});
+    },
+    // 点击左边icon
+    clickLeftIcon(e) {
+      this.triggerEvent('click-left-icon', {
+        key: e.currentTarget.dataset.item.name,
+        scanInput: e.currentTarget.dataset.item.layout.scanInput
+      })
     }
   }
 })
